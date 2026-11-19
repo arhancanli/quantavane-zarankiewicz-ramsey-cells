@@ -1,0 +1,8 @@
+z(9,22;5,5) = 152   (DGH 2025 Table 7 prints the upper bound 153 (full LP; open: bounds only); beyond Collins 2016 Table 6 (n <= 18))
+LOWER: witnesses/ilp_9_22_55.mat sha256=3666a3b81372a85769cb9ca3f5afe6085ad07c600d82e22c6bca2db792d72677
+  zcheck:  PASS m=9 n=22 ones=152 no 5x5 all-ones block
+  zcheck2: PASS m=9 n=22 ones=152 no 5x5 all-ones block (checked 26115 column 5-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (elementary deletion bound): z(9,22;5,5) <= floor(22*z(9,21;5,5)/21) = floor(22*146/21) = 152, with z(9,21;5,5) = 146 (previous cell of this row, same certificate chain). Label: by the elementary deletion bound.

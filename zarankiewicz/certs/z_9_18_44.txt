@@ -1,0 +1,16 @@
+PRIOR ART: Collins et al. 2016, Table 5 prints z(9,18;4) = 109 in ITALICS = an upper bound determined by exhaustive computation (not bold, so not stated as exact). The upper bound 109 is credited to Collins et al. What is new here: the matching construction (109 ones) and so the exact value z(9,18;4,4) = 109. Our SAT upper bound is an independent confirmation.
+z(9,18;4,4) = 109  (Tan 2022 Table 4: open, Roman bound 113; no DGH entry for m = 9; elementary deletion bound from z(9,17) = 104: <= floor(18*104/17) = 110)
+LOWER: witnesses/z_9_18_44_v109.mat sha256=249336c07ab7f50bdebf50181cb82a9cca9233c07a9f6ced5d975ae2ef984d85 (CP-SAT search)
+  zcheck:  PASS m=9 n=18 ones=109 no 4x4 all-ones block
+  zcheck2: PASS m=9 n=18 ones=109 no 4x4 all-ones block (checked 2827 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER: type form + pts, size split at K = 110 with deletion pruning: every column >= 110 - z(9,17;4,4) = 110 - 104 = 6 ones (z(9,17;4,4) = 104: Collins et al. 2016, Table 5, bold). 2 cases; enumerators agree.
+  dir "<archive>/zarankiewicz/tsplit_9_18_44_k110_c6"; cases.txt sha256=ab08af12dfd52967974f1ca6853ccdbba34e65bfb1ede53244ca9ed5f471fe34
+  per-case lines of the re-check by tools/reverify.sh (both encoders regenerate the stored CNF byte for byte; cake_lpr on the stored proof):
+  REVERIFY case 1 sp=0,0,16,2,0,0 stored_cnf=462e8ac229b041da encA=same encB=same cake=[s VERIFIED UNSAT]
+  REVERIFY case 2 sp=0,0,17,0,1,0 stored_cnf=ce324938828182da encA=same encB=same cake=[s VERIFIED UNSAT]
+  REVERIFY-END <archive>/zarankiewicz/tsplit_9_18_44_k110_c6 cases=2 ok=2 ALL-OK
+  c1.lrat.gz bytes=645758102 sha256=fdf0ff6d4714c0c58bb108728de2a52b3d52d006e70c70ab38420ebd37272c7f
+  c2.lrat.gz bytes=41476923 sha256=ff1f6575e738b12a5e16776a1236de86bbcc65b02f090ebf36b1bd9f26b8314e

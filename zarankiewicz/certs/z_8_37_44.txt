@@ -1,0 +1,12 @@
+z(8,37;4,4) = 184   (beyond Tan 2022 Table 4 (n <= 21) and Collins et al. 2016 Table 5 (n <= 18); DGH 2025 Table 5 has no m = 8 row)
+LOWER: witnesses/z_8_37_44_v184.mat sha256=b907bf40dde7d6540d603a91736efee1cd9647ac52ceb2ef49d358faa9a5ff76
+  zcheck:  PASS m=8 n=37 ones=184 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=37 ones=184 no 4x4 all-ones block (checked 51639 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (SAT): deletion gives only 185; type form + pts, size split at K = 185, every case CaDiCaL LRAT + cake_lpr VERIFIED UNSAT:
+  TSPLIT-START z(8,37;4,4)>=185 cmin=5 rmin=0 cases=1 casesA=dfd8cf160b9142a9318e164a2312c42f123e9b26663612fbdb25faaad73a1d6c CASES-SAME 2026-11-19 17:04:31 +0400
+  TCASE 1/1 sp=0,37,0,0,0 ENC-SAME cnf=a495babe8906297a UNSAT solve_s=10 cake_s=3 [s VERIFIED UNSAT] lrat=6be014b06ef11570
+  TSPLIT-END z(8,37;4,4)>=185 cases=1 verified_unsat=1 timeouts=0 ALL-CASES-VERIFIED-UNSAT 2026-11-19 17:04:45 +0400
+  <archive>/zarankiewicz/tsplit_8_37_44_k185_c5/c1.lrat.gz bytes=24236624

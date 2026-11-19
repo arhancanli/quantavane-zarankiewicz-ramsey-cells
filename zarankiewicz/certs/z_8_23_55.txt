@@ -1,0 +1,8 @@
+z(8,23;5,5) = 143   (beyond Collins et al. 2016 Table 6 (n <= 18); inside DGH 2025 Table 7's range but not printed there (row m = 8 printed only for n <= 14))
+LOWER: witnesses/ilp_8_23_55.mat sha256=c040e0d48a6a374b860ef857fe31369124403b4d2727cb9fafd4ee1c33bcf651
+  zcheck:  PASS m=8 n=23 ones=143 no 5x5 all-ones block
+  zcheck2: PASS m=8 n=23 ones=143 no 5x5 all-ones block (checked 33289 column 5-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (elementary deletion bound): z(8,23;5,5) <= floor(23*z(8,22;5,5)/22) = floor(23*137/22) = 143, with z(8,22;5,5) = 137 (previous cell of this row, same certificate chain). Label: by the elementary deletion bound.

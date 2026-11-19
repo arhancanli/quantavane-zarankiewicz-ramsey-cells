@@ -1,0 +1,12 @@
+# K2_12_K2_4_n26: lower-bound witness R(K2,12,K2,4) >= 27, tools/kab_card.py CNF ce42c99ec5c8f86b..., CaDiCaL 3.0.1 SAT in 1300 s, 2026-11-19 15:08, sha256 b06aa763a0a23d73dc2f6c9333a2e9ad2012a9cb148458c772082bfc2735c87f
+colour 0 (214 edges): no K2,12
+colour 1 (111 edges): no K2,4
+PASS n=26
+colour 0 (214 edges): no K2,12 (max common neighbours 11)
+colour 1 (111 edges): no K2,4 (max common neighbours 3)
+PASS n=26
+colour 0 (214 edges): no K2,12
+colour 1 (111 edges): no K2,4
+PASS n=26
+control colour 0: qvr FAIL / kabcount FAIL / char FAIL
+control colour 1: qvr FAIL / kabcount FAIL / char FAIL

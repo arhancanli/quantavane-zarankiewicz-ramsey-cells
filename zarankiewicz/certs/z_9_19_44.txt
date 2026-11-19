@@ -1,0 +1,11 @@
+z(9,19;4,4) = 114  (Tan 2022 Table 4: open, Roman bound 118; no DGH entry for m = 9)
+UPPER (SAT): type form + pts, size split at K = 115 with deletion pruning, every column >= 115 - z(9,18;4,4) = 115 - 109 = 6 (z(9,18) = 109, certs/z_9_18_44.txt): 1 case, cake_lpr VERIFIED; independent re-check by tools/reverify.sh (runs/reverify_9_19.log): both encoders regenerate the stored CNF byte for byte, cake_lpr VERIFIED UNSAT. The elementary deletion bound gives only 115. New here: construction (CP-SAT witness) and upper bound.
+LOWER: witnesses/z_9_19_44_v114.mat sha256=94000eb06a210a0b08a6b18d0a5fcd279a311aa244a460844eb2301df39423e1
+  zcheck:  PASS m=9 n=19 ones=114 no 4x4 all-ones block
+  zcheck2: PASS m=9 n=19 ones=114 no 4x4 all-ones block (checked 3557 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+REVERIFY case 1 sp=0,0,18,1,0,0 stored_cnf=5e27f66d4a18eecc encA=same encB=same cake=[s VERIFIED UNSAT]
+REVERIFY-END <archive>/zarankiewicz/tsplit_9_19_44_k115_c6 cases=1 ok=1 ALL-OK
+  c1.lrat.gz sha256=655cdd2c19e5ba798b218ead15102c7af4d7562e03c90deed9ded2a0426fe4e7

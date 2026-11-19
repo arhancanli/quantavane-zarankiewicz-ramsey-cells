@@ -1,0 +1,10 @@
+z(9,18;5,5) = 128   (Collins et al. 2016 Table 6 prints 128 NOT in bold = an upper bound only; DGH 2025 Table 7 has no entry at (9,18))
+UPPER: Collins's bound 128 (credited) = the elementary deletion bound floor(18 * z(9,17;5) / 17) = floor(18*121/17) = 128 from Collins's exact z(9,17;5) = 121 (bold).
+New here: the construction with 128 ones, hence the exact value.
+LOWER: witnesses/ilp_9_18_55.mat sha256=b8fd9c001f9c0c262dff4bf0db2483c8f9d258c8df65fb1b8c59fe481c7369d5 (CP-SAT search)
+  zcheck:  PASS m=9 n=18 ones=128 no 5x5 all-ones block
+  zcheck2: PASS m=9 n=18 ones=128 no 5x5 all-ones block (checked 8520 column 5-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (independent of Collins et al.): type-form size split at K = 129 with deletion pruning CMIN = 129 - 123 (counting bound ub(9,17;5,5) = 123) and RMIN = 129 - 115 (z(8,18;5,5) = 115 = counting bound): 2 cases, CaDiCaL LRAT + cake_lpr VERIFIED UNSAT (runs/indep_9_18_55.log). So z(9,18;5,5) <= 128 no longer rests on Collins's bold z(9,17;5) = 121.

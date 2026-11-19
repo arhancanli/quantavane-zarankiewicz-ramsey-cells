@@ -1,0 +1,12 @@
+# K2_14_K2_3_n25: lower-bound witness R(K2,14,K2,3) >= 26, kab_card CNF 3f50a081a41ed37a..., 2026-11-19 15:28, sha256 307601434f43819bfa15fccd07ed0a9d5dd7b395f2ae104dd42184e2bd71ab0e
+colour 0 (214 edges): no K2,14
+colour 1 (86 edges): no K2,3
+PASS n=25
+colour 0 (214 edges): no K2,14 (max common neighbours 13)
+colour 1 (86 edges): no K2,3 (max common neighbours 2)
+PASS n=25
+colour 0 (214 edges): no K2,14
+colour 1 (86 edges): no K2,3
+PASS n=25
+control colour 0: qvr FAIL / kabcount FAIL / char FAIL
+control colour 1: qvr FAIL / kabcount FAIL / char FAIL

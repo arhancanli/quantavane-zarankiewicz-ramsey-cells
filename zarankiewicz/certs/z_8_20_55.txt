@@ -1,0 +1,8 @@
+z(8,20;5,5) = 126   (beyond Collins et al. 2016 Table 6 (n <= 18); inside DGH 2025 Table 7's range but not printed there (row m = 8 printed only for n <= 14))
+LOWER: witnesses/ilp_8_20_55.mat sha256=1bc54d6b503beac1d3b007ee52685e2e2fff33ae5485ebd635ddcd3313c6609c
+  zcheck:  PASS m=8 n=20 ones=126 no 5x5 all-ones block
+  zcheck2: PASS m=8 n=20 ones=126 no 5x5 all-ones block (checked 15420 column 5-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (elementary deletion bound): z(8,20;5,5) <= floor(20*z(8,19;5,5)/19) = floor(20*120/19) = 126, with z(8,19;5,5) = 120 (previous cell of this row, same certificate chain). Label: by the elementary deletion bound.

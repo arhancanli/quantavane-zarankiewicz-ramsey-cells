@@ -1,0 +1,8 @@
+z(9,21;4,4) = 126  (Tan 2022 Table 4: open, Roman bound 129; no DGH entry for m = 9)
+UPPER (elementary deletion bound): z(9,21) <= floor(21 * z(9,20) / 20) = floor(21*120/20) = 126. (The pruned split at K = 127 has no cases, which is the same statement.) LOWER: an encoder-made witness: the size split at K = 125 and K = 126 returned SAT (tools/ztsplit.sh, decoded by tools/ztdecode.py). New here: the construction and the exact value.
+LOWER: witnesses/z_9_21_44_v126.mat sha256=52191295ef248d051fc5d47de8d39a0d54c073de53a6fe86c8bbd6542f9821da
+  zcheck:  PASS m=9 n=21 ones=126 no 4x4 all-ones block
+  zcheck2: PASS m=9 n=21 ones=126 no 4x4 all-ones block (checked 5472 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL

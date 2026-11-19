@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these values, matrices, colourings or programs, please cite them as below, together with the tables they complete (Tan 2022; Collins, Riasanovsky, Wallace and Radziszowski 2016; Davies, Gill and Horsley 2026; Radziszowski, Small Ramsey Numbers, DS1)."
+type: dataset
+title: "The row z(8,n;4,4), twenty further Zarankiewicz numbers, and seven small Ramsey numbers"
+abstract: "z(8,n;4,4) for every n; twenty cells of the published K_{4,4} and K_{5,5} Zarankiewicz tables; and R(K_{2,12},K_{2,3}) = 23, R(K_{2,13},K_{2,3}) = 25, R(K_{2,14},K_{2,3}) = 26, R(K_{2,12},K_{2,4}) = 27, R(C_4,K_{3,11}) = 22, R(C_4,C_4,K_{1,13}) = 23, R(C_4,C_4,K_{1,14}) = 24. Explicit matrices and colourings checked by separately written programs with red controls; upper bounds by counting, the deletion bound, or SAT case splits whose LRAT proofs were checked by cake_lpr (hashes recorded). Not yet peer reviewed."
+authors:
+  - family-names: Canli
+    given-names: Arhan
+    affiliation: Quantavane
+    email: arhan@quantavane.com
+license: CC-BY-4.0
+url: "https://quantavane.com"
+repository-code: "https://github.com/arhancanli/quantavane-zarankiewicz-ramsey-cells"
+keywords:
+  - Zarankiewicz problem
+  - bipartite Turan numbers
+  - small Ramsey numbers
+  - SAT
+  - LRAT

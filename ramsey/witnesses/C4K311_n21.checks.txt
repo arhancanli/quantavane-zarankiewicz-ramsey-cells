@@ -1,0 +1,13 @@
+# C4K311_n21: lower-bound witness R(C4,K3,11) >= 22 (it has no K3,10 in colour 1, so no K3,11 either); found on Kaggle kcard2 as the red control C4/K3,10 n=21 (kab_card CNF 212cb7a3..., CaDiCaL 80 s), 2026-11-19 17:48, sha256 4acbedf8c4f4de123e8ea8229e4682afa65d5a2f54b31b6fc2399f4989e0c70b
+colour 0 (50 edges): no C4
+colour 1 (160 edges): no K3,11
+PASS n=21
+colour 0 (50 edges): no C4 (max common neighbours 1)
+colour 1 (160 edges): no K3,11 (max common neighbours 9)
+PASS n=21
+colour 0 (50 edges): no C4
+colour 1 (160 edges): no K3,11
+PASS n=21
+also vs C4/K3,10: PASS n=21
+control colour 0: qvr FAIL / kabcount FAIL / char FAIL
+control colour 1: qvr FAIL / kabcount FAIL / char FAIL

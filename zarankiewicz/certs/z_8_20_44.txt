@@ -1,0 +1,24 @@
+z(8,20;4,4) = 109  (Tan 2022 Table 4: open, upper bound 111)
+MAIN UPPER-BOUND PROOF: elementary deletion bound from z(8,19;4,4) = 104
+(Tan 2022 exact for n-1 = 18; the previous cell of this row otherwise): deleting a column with the fewest ones gives
+z(8,20) <= floor(20*104/19) = 109. The SAT + cake_lpr split below is a CROSS-CHECK only.
+New here: the construction (lower bound) and the statement of the exact value.
+lower: witnesses/z_8_20_44_v109.mat sha256=55e580f9e6c4e9db67c0ade8baa70f6dc07226a77b0709497d86cc1387f917a8
+  zcheck:  PASS m=8 n=20 ones=109 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=20 ones=109 no 4x4 all-ones block (checked 4384 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+upper: type form + pts, size-profile split at K=110, dir "<archive>/zarankiewicz/tsplit_8_20_44_k110"
+  cases.txt sha256=51bed28803930a3e11944cc776175331c4817a2e32ebca0ef46744aa55fa9568 (equal as a sorted set to checks/zsizes2 output)
+  TSPLIT-START z(8,20;4,4)>=110 cases=3 casesA=e9d1cee22176bbf422b0ce89a72f9669aa4deeb23835182221d7209579fb5d2b CASES-SAME 2026-11-19 15:41:08 +0400
+  TCASE 1/3 sp=0,10,10,0,0 ENC-SAME cnf=786116c85977b56f UNSAT solve_s=2 cake_s=1 [s VERIFIED UNSAT] lrat=020289b757d50991
+  TCASE 2/3 sp=1,8,11,0,0 ENC-SAME cnf=0f2fe8707b211653 UNSAT solve_s=1 cake_s=1 [s VERIFIED UNSAT] lrat=82da432d2078ef75
+  TCASE 3/3 sp=0,11,8,1,0 ENC-SAME cnf=3970b3d37c0a580c UNSAT solve_s=3 cake_s=1 [s VERIFIED UNSAT] lrat=e2975b86dbcf4891
+  TSPLIT-END z(8,20;4,4)>=110 cases=3 verified_unsat=3 timeouts=0 ALL-CASES-VERIFIED-UNSAT 2026-11-19 15:41:18 +0400
+  c1.lrat.gz bytes=4775237 sha256=ec70c846651b37fba423df8c5774b64b7955cfeb416f08473918c3ad7371a29c
+  c2.lrat.gz bytes=3598048 sha256=789fcf24c0c7c825d61091ac255d318d67dfb9f3e310ef67f5a29f6b2f405a00
+  c3.lrat.gz bytes=8890874 sha256=017b6ae722260df7f14feb9d8eadd2921f8cf43ad1e1414805d47a102508b455
+  c1.cnf sha256=786116c85977b56ff564c07290043a92ef30cc68760e4020550c088449745883
+  c2.cnf sha256=0f2fe8707b211653c2fc310af7a86b6cb4e7336ba12373ef6eb2e98baf85e34b
+  c3.cnf sha256=3970b3d37c0a580c1640c4f1552ee2f62407f1f69cc66c4176e527ae9b6d1d96

@@ -1,0 +1,10 @@
+z(10,19;4,4) = 126  (Tan 2022 Table 4: open, Roman bound 131; DGH 2025 Table 5: improved upper bound 130)
+UPPER (elementary deletion bound, rows): deleting a lightest row of a 10 x 19 matrix: z(10,19) <= floor(10 * z(9,19) / 9) = floor(10*114/9) = 126, with z(9,19;4,4) = 114 (certs/z_9_19_44.txt). Label: by the elementary deletion bound (depends on our SAT value z(9,19) = 114).
+New here: the construction and the exact value.
+LOWER: witnesses/z_10_19_44_v126.mat sha256=5c0593040d58d5ec48e12fc807a5775fc1973c7c70538b3aa233aa581d32720f (CP-SAT search)
+  zcheck:  PASS m=10 n=19 ones=126 no 4x4 all-ones block
+  zcheck2: PASS m=10 n=19 ones=126 no 4x4 all-ones block (checked 3589 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+SECOND UPPER-BOUND ROUTE: column deletion from Collins et al. 2016's exact z(10,18;4) = 120: z(10,19) <= floor(19*120/18) = 126.

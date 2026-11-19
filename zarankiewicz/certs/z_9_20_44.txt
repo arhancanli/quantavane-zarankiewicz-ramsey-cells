@@ -1,0 +1,8 @@
+z(9,20;4,4) = 120  (Tan 2022 Table 4: open, Roman bound 123; no DGH entry for m = 9)
+UPPER (elementary deletion bound): z(9,20) <= floor(20 * z(9,19) / 19) = floor(20*114/19) = 120 (z(9,19) = 114, certs/z_9_19_44.txt). New here: the construction (CP-SAT witness) and the exact value.
+LOWER: witnesses/z_9_20_44_v120.mat sha256=d22e3520e74600938d995398bee8d4510de98a5ef514842890670a514a662774
+  zcheck:  PASS m=9 n=20 ones=120 no 4x4 all-ones block
+  zcheck2: PASS m=9 n=20 ones=120 no 4x4 all-ones block (checked 4435 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL

@@ -1,0 +1,10 @@
+z(8,18;5,5) = 115   (Collins et al. 2016 Table 6 prints 115 NOT in bold = an upper bound only)
+UPPER: Collins's bound 115 (credited) = the elementary deletion bound floor(18 * z(8,17;5) / 17) = floor(18*109/17) = 115 from Collins's exact (bold) z(8,17;5) = 109.
+New here: the construction with 115 ones, hence the exact value.
+LOWER: witnesses/ilp_8_18_55.mat sha256=dee75b7aeb96df515144b223c6517e878fdbc9f41ce5eeae49a160c4ff968da5 (CP-SAT search)
+  zcheck:  PASS m=8 n=18 ones=115 no 5x5 all-ones block
+  zcheck2: PASS m=8 n=18 ones=115 no 5x5 all-ones block (checked 8568 column 5-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (independent of Collins et al.): the counting bound (Guy's argument A; tools/ubound.py) gives z(8,18;5,5) <= 115 directly: sum_j C(c_j,5) <= 4*C(8,5) = 224 over 18 columns forces sum c_j <= 115. So this cell does not rest on Collins's bold z(8,17;5) = 109.

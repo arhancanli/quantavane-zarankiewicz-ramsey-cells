@@ -1,0 +1,12 @@
+# K2_13_K2_3_n24: lower-bound witness from tools/kab_card.py (CNF 86302b37096127dc...), CaDiCaL 3.0.1, 2026-11-19 14:58, sha256 33ec8850768c3eed637cdded9f48ed9a6087445a362a2c255d406601bbde645c
+colour 0 (195 edges): no K2,13
+colour 1 (81 edges): no K2,3
+PASS n=24
+colour 0 (195 edges): no K2,13 (max common neighbours 12)
+colour 1 (81 edges): no K2,3 (max common neighbours 2)
+PASS n=24
+colour 0 (195 edges): no K2,13
+colour 1 (81 edges): no K2,3
+PASS n=24
+control colour 0: qvr FAIL / kabcount FAIL / char FAIL
+control colour 1: qvr FAIL / kabcount FAIL / char FAIL

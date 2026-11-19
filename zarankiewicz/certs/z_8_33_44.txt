@@ -1,0 +1,8 @@
+z(8,33;4,4) = 168   (beyond Tan 2022 Table 4 (n <= 21) and Collins et al. 2016 Table 5 (n <= 18); DGH 2025 Table 5 has no m = 8 row)
+LOWER: witnesses/z_8_33_44_v168.mat sha256=2095019c8d86551426be173ef71973f31b61c33b832bccbb734c597da99ac191
+  zcheck:  PASS m=8 n=33 ones=168 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=33 ones=168 no 4x4 all-ones block (checked 33555 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (elementary deletion bound): z(8,33) <= floor(33*z(8,32)/32) = floor(33*163/32) = 168, z(8,32;4,4) = 163 (previous cell of this row). Label: by the elementary deletion bound.

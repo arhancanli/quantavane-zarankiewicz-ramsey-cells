@@ -1,0 +1,11 @@
+z(8,22;5,5) = 137   (beyond Collins et al. 2016 Table 6 (n <= 18); inside DGH 2025 Table 7's range but not printed there (row m = 8 printed only for n <= 14))
+LOWER: witnesses/ilp_8_22_55.mat sha256=ad558e473ff9f94098ac8840c6f392be3b6803d38fc7330f25ffaf2cbc575a49
+  zcheck:  PASS m=8 n=22 ones=137 no 5x5 all-ones block
+  zcheck2: PASS m=8 n=22 ones=137 no 5x5 all-ones block (checked 26064 column 5-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (SAT): the deletion bound from z(8,21) = 132 gives 138; size split at K = 138 with deletion pruning, every case CaDiCaL LRAT + cake_lpr VERIFIED UNSAT:
+  TSPLIT-START z(8,22;5,5)>=138 cmin=6 rmin=0 cases=1 casesA=80118e326c8f6be45e16607270867c69737c3a184f4d194b6d43a6195f38debd CASES-SAME 2026-11-19 19:26:59 +0400
+  TCASE 1/1 sp=0,16,6,0 ENC-SAME cnf=5865b07f694b6a91 UNSAT solve_s=0 cake_s=0 [s VERIFIED UNSAT] lrat=c125275826627fdb
+  TSPLIT-END z(8,22;5,5)>=138 cases=1 verified_unsat=1 timeouts=0 ALL-CASES-VERIFIED-UNSAT 2026-11-19 19:27:00 +0400

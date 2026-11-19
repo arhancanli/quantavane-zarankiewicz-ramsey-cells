@@ -1,0 +1,18 @@
+z(8,21;4,4) = 114  (Tan 2022 Table 4: open, upper bound 115)
+MAIN UPPER-BOUND PROOF: elementary deletion bound from z(8,20;4,4) = 109
+(Tan 2022 exact for n-1 = 18; the previous cell of this row otherwise): deleting a column with the fewest ones gives
+z(8,21) <= floor(21*109/20) = 114. The SAT + cake_lpr split below is a CROSS-CHECK only.
+New here: the construction (lower bound) and the statement of the exact value.
+lower: witnesses/z_8_21_44_v114.mat sha256=2a9a5efdaf28fa83cdef897280c78412928dcf7a7675748ab4b56b2a7862bed0
+  zcheck:  PASS m=8 n=21 ones=114 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=21 ones=114 no 4x4 all-ones block (checked 5352 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+upper: type form + pts, size-profile split at K=115, dir "<archive>/zarankiewicz/tsplit_8_21_44_k115"
+  cases.txt sha256=7f1a272dff0acc6112fc7f05831b40d64561a307a41fa96000194c2e27581451 (equal as a sorted set to checks/zsizes2 output)
+  TSPLIT-START z(8,21;4,4)>=115 cases=1 casesA=7f1a272dff0acc6112fc7f05831b40d64561a307a41fa96000194c2e27581451 CASES-SAME 2026-11-19 15:41:05 +0400
+  TCASE 1/1 sp=0,11,10,0,0 ENC-SAME cnf=18d54cf22594fd67 UNSAT solve_s=2 cake_s=1 [s VERIFIED UNSAT] lrat=a0943f16ae1e450e
+  TSPLIT-END z(8,21;4,4)>=115 cases=1 verified_unsat=1 timeouts=0 ALL-CASES-VERIFIED-UNSAT 2026-11-19 15:41:08 +0400
+  c1.lrat.gz bytes=5148159 sha256=696dcf8c744d1d80c34c71415575c11b5e8dac823557e18ca52aab33643cce7e
+  c1.cnf sha256=18d54cf22594fd67d26dc0ea3e011f5d7c7070f8e5c84dfd1cb83e2414df9d54

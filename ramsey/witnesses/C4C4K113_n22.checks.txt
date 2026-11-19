@@ -1,0 +1,16 @@
+# C4C4K113_n22: lower-bound witness R(C4,C4,K1,13) >= 23, tools/c4star_card.py = checks/c4starcard.c CNF 06a44ac5d718..., CaDiCaL 3.0.1 SAT in 23 s, 2026-11-19 15:25, sha256 a68f5abf813dfe87c5ba449ccd3603575afd8427ef788dabac47db9e40cdc60b
+colour 0 (51 edges): no C4
+colour 1 (48 edges): no C4
+colour 2 (132 edges): no K1,13
+PASS n=22
+colour 0 (51 edges): no C4 (max common neighbours 1)
+colour 1 (48 edges): no C4 (max common neighbours 1)
+colour 2 (132 edges): no K1,13 (max common neighbours 12)
+PASS n=22
+colour 0 (51 edges): no C4
+colour 1 (48 edges): no C4
+colour 2 (132 edges): no K1,13
+PASS n=22
+control colour 0: qvr FAIL / kabcount FAIL / char FAIL
+control colour 1: qvr FAIL / kabcount FAIL / char FAIL
+control colour 2: qvr FAIL / kabcount FAIL / char FAIL

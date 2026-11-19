@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.so
+.DS_Store
+.claude-flow/
+.swarm/
+ruvector.db
+agentdb.rvf*

@@ -1,0 +1,8 @@
+z(8,47;4,4) = 224   (beyond Tan 2022 Table 4 (n <= 21) and Collins et al. 2016 Table 5 (n <= 18); DGH 2025 Table 5 has no m = 8 row)
+LOWER: witnesses/z_8_47_44_v224.mat sha256=f6f3d9dc03d4cff117d0e27f1ec08f2e372c22dc8a8bfaffcb15f280c24c5335
+  zcheck:  PASS m=8 n=47 ones=224 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=47 ones=224 no 4x4 all-ones block (checked 127702 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (elementary deletion bound): z(8,47) <= floor(47*z(8,46)/46) = floor(47*220/46) = 224, z(8,46;4,4) = 220 (previous cell of this row). Label: by the elementary deletion bound.

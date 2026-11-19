@@ -1,0 +1,30 @@
+z(8,19;4,4) = 104  (Tan 2022 Table 4: open, upper bound 106)
+MAIN UPPER-BOUND PROOF: elementary deletion bound from z(8,18;4,4) = 99
+(Tan 2022 exact for n-1 = 18; the previous cell of this row otherwise): deleting a column with the fewest ones gives
+z(8,19) <= floor(19*99/18) = 104. The SAT + cake_lpr split below is a CROSS-CHECK only.
+New here: the construction (lower bound) and the statement of the exact value.
+lower: witnesses/z_8_19_44_v104.mat sha256=3200421b310ce93fe1a07948c20f54855b08658237f383004b56f91e18910277
+  zcheck:  PASS m=8 n=19 ones=104 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=19 ones=104 no 4x4 all-ones block (checked 3568 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+upper: type form + pts, size-profile split at K=105, dir "<archive>/zarankiewicz/tsplit_8_19_44_k105"
+  cases.txt sha256=92e9f99e216fa7a04d4bd77f99c7ee3264a24d2e14adfeb9ab3a1bbf4b0b25ab (equal as a sorted set to checks/zsizes2 output)
+  TSPLIT-START z(8,19;4,4)>=105 cases=5 casesA=d494cf716a01ad3fd958901989ac5a2b44fd159b46e8065c3c5b0c51fc32bee3 CASES-SAME 2026-11-19 15:41:18 +0400
+  TCASE 1/5 sp=0,9,10,0,0 ENC-SAME cnf=2fa19b0539fed081 UNSAT solve_s=2 cake_s=0 [s VERIFIED UNSAT] lrat=4fa30080a837956c
+  TCASE 2/5 sp=1,7,11,0,0 ENC-SAME cnf=df18959017b5b8df UNSAT solve_s=2 cake_s=0 [s VERIFIED UNSAT] lrat=4719714eeb658979
+  TCASE 3/5 sp=2,5,12,0,0 ENC-SAME cnf=d7975843688677a6 UNSAT solve_s=1 cake_s=0 [s VERIFIED UNSAT] lrat=f15188a84eecedde
+  TCASE 4/5 sp=0,6,12,0,0 ENC-SAME cnf=29b7acacbdc43aed UNSAT solve_s=0 cake_s=0 [s VERIFIED UNSAT] lrat=9396e9af9c0df600
+  TCASE 5/5 sp=0,10,8,1,0 ENC-SAME cnf=98392a7b1768b925 UNSAT solve_s=2 cake_s=1 [s VERIFIED UNSAT] lrat=86cf77bd1cacaa6e
+  TSPLIT-END z(8,19;4,4)>=105 cases=5 verified_unsat=5 timeouts=0 ALL-CASES-VERIFIED-UNSAT 2026-11-19 15:41:28 +0400
+  c1.lrat.gz bytes=4759138 sha256=1352bcf633870a3ca05b3e50f790b7debf18090785f869833f6718ee2816566d
+  c2.lrat.gz bytes=3615504 sha256=0592e03bad92c19a9a8ae0748cefb33ce495f2f828bf422f5ff83e7bb42f82ee
+  c3.lrat.gz bytes=1968477 sha256=4027606e9d7fb6010b27760d2b9ec0b442e05397b563638670a165b378298255
+  c4.lrat.gz bytes=1547559 sha256=0982c09b8bb040efa2201d89b2ba2ba389abf95be9a32d350ba6d40e9abc5a76
+  c5.lrat.gz bytes=7488286 sha256=298211f49259ec4fc39f4aca69173f03dff32527668977e328bdd73d63999d3d
+  c1.cnf sha256=2fa19b0539fed081a57e787a6623047b9f677d74678faacfd40d5d9080a20873
+  c2.cnf sha256=df18959017b5b8df33820c205b39d172e4c311a675aec64a206e857e6e7235eb
+  c3.cnf sha256=d7975843688677a6643d0bcba95575c4222147e0b11173837d165494e998976f
+  c4.cnf sha256=29b7acacbdc43aed1e68234275d46dcd4160df381823be8a04a0a83d1f5a8ff7
+  c5.cnf sha256=98392a7b1768b925008126ef155940ffdc0d223300ec4301f01afe5fc9ebe334

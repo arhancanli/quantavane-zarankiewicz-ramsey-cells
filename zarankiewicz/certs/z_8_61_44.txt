@@ -1,0 +1,8 @@
+z(8,61;4,4) = 280   (beyond Tan 2022 Table 4 (n <= 21) and Collins et al. 2016 Table 5 (n <= 18); DGH 2025 Table 5 has no m = 8 row)
+LOWER: witnesses/z_8_61_44_v280.mat sha256=611ac922093980768fa448276e58fc4b2c17e426108fb95366998dc33049818d
+  zcheck:  PASS m=8 n=61 ones=280 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=61 ones=280 no 4x4 all-ones block (checked 334097 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (elementary deletion bound): z(8,61) <= floor(61*z(8,60)/60) = floor(61*276/60) = 280, z(8,60;4,4) = 276 (previous cell of this row). Label: by the elementary deletion bound.

@@ -1,0 +1,12 @@
+z(9,19;5,5) = 134   (DGH 2025 Table 7 prints the upper bound 135 (full LP; open: bounds only); beyond Collins 2016 Table 6 (n <= 18))
+LOWER: witnesses/ilp_9_19_55.mat sha256=cb951b2b35532ee760b90fa60ca0229be848b294c09e44f8fd6ab7c8c6262a13
+  zcheck:  PASS m=9 n=19 ones=134 no 5x5 all-ones block
+  zcheck2: PASS m=9 n=19 ones=134 no 5x5 all-ones block (checked 11580 column 5-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (SAT): the deletion bound from z(9,18) = 128 gives 135; size split at K = 135 with deletion pruning, every case CaDiCaL LRAT + cake_lpr VERIFIED UNSAT:
+  TSPLIT-START z(9,19;5,5)>=135 cmin=7 rmin=0 cases=2 casesA=9f700fa1763eb7e937a4374df91a9a769d0db98f82ce68cb64823c156d9a0202 CASES-SAME 2026-11-19 18:32:35 +0400
+  TCASE 1/2 sp=0,0,17,2,0 ENC-SAME cnf=448d80b57ccd73e5 UNSAT solve_s=1 cake_s=1 [s VERIFIED UNSAT] lrat=d895e28f71088fd7
+  TCASE 2/2 sp=0,0,18,0,1 ENC-SAME cnf=a77385f56b7df43a UNSAT solve_s=0 cake_s=0 [s VERIFIED UNSAT] lrat=27be4138672e8df0
+  TSPLIT-END z(9,19;5,5)>=135 cases=2 verified_unsat=2 timeouts=0 ALL-CASES-VERIFIED-UNSAT 2026-11-19 18:32:39 +0400

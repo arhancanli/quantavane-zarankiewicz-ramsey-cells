@@ -1,0 +1,16 @@
+z(8,22;4,4) = 118   (beyond Tan 2022 Table 4 (n <= 21) and Collins et al. 2016 Table 5 (n <= 18); DGH 2025 Table 5 has no m = 8 row)
+LOWER: witnesses/z_8_22_44_v118.mat sha256=2ff5def61705a50e91a9b1d2bf7eb8fefd15124775dea1afe71ddf9ec0939fb9
+  zcheck:  PASS m=8 n=22 ones=118 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=22 ones=118 no 4x4 all-ones block (checked 6518 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (SAT): deletion gives only 119; type form + pts, size split at K = 119, every case CaDiCaL LRAT + cake_lpr VERIFIED UNSAT:
+  REVERIFY case 1 sp=0,13,9,0,0 stored_cnf=8e70c56e4af36cae encA=same encB=same cake=[s VERIFIED UNSAT]
+  REVERIFY case 2 sp=1,11,10,0,0 stored_cnf=211d288c6eaf92ff encA=same encB=same cake=[s VERIFIED UNSAT]
+  REVERIFY case 3 sp=0,14,7,1,0 stored_cnf=e1769b093e6dae5b encA=same encB=same cake=[s VERIFIED UNSAT]
+  REVERIFY-END <archive>/zarankiewicz/tsplit_8_22_44_k119 cases=3 ok=3 ALL-OK
+  (independent re-check by tools/reverify.sh: both encoders regenerate the stored CNF; cake_lpr on the stored proof)
+  <archive>/zarankiewicz/tsplit_8_22_44_k119/c1.lrat.gz bytes=17631925
+  <archive>/zarankiewicz/tsplit_8_22_44_k119/c2.lrat.gz bytes=9795134
+  <archive>/zarankiewicz/tsplit_8_22_44_k119/c3.lrat.gz bytes=20896036

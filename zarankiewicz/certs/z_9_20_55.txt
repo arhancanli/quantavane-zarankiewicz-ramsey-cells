@@ -1,0 +1,11 @@
+z(9,20;5,5) = 140   (DGH 2025 Table 7 prints the upper bound 141 (full LP; open: bounds only); beyond Collins 2016 Table 6 (n <= 18))
+LOWER: witnesses/ilp_9_20_55.mat sha256=55e09e1a9bc270aca4456226d7ec5664e79b29748ca40d0e6afe104cdcc0c764
+  zcheck:  PASS m=9 n=20 ones=140 no 5x5 all-ones block
+  zcheck2: PASS m=9 n=20 ones=140 no 5x5 all-ones block (checked 15456 column 5-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (SAT): the deletion bound from z(9,19) = 134 gives 141; size split at K = 141 with deletion pruning, every case CaDiCaL LRAT + cake_lpr VERIFIED UNSAT:
+  TSPLIT-START z(9,20;5,5)>=141 cmin=7 rmin=0 cases=1 casesA=9af87ea534ac9aedabede8bc960aaa3773e75dc1bf28896568821f4e7fe2498e CASES-SAME 2026-11-19 18:32:41 +0400
+  TCASE 1/1 sp=0,0,19,1,0 ENC-SAME cnf=61eca3c06618462d UNSAT solve_s=2 cake_s=0 [s VERIFIED UNSAT] lrat=53439a0aec1cdb8a
+  TSPLIT-END z(9,20;5,5)>=141 cases=1 verified_unsat=1 timeouts=0 ALL-CASES-VERIFIED-UNSAT 2026-11-19 18:32:43 +0400

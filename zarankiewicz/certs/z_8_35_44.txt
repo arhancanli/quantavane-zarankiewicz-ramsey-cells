@@ -1,0 +1,14 @@
+z(8,35;4,4) = 176   (beyond Tan 2022 Table 4 (n <= 21) and Collins et al. 2016 Table 5 (n <= 18); DGH 2025 Table 5 has no m = 8 row)
+LOWER: witnesses/z_8_35_44_v176.mat sha256=53128283af54e5ad02f18b09b6e27c9f4909fd82288e860ec2721a0daa8c8ad2
+  zcheck:  PASS m=8 n=35 ones=176 no 4x4 all-ones block
+  zcheck2: PASS m=8 n=35 ones=176 no 4x4 all-ones block (checked 41959 column 4-sets)
+  control ctrlA: zcheck=FAIL zcheck2=FAIL
+  control ctrlB: zcheck=FAIL zcheck2=FAIL
+  control ctrlC: zcheck=FAIL zcheck2=FAIL
+UPPER (SAT): deletion gives only 177; type form + pts, size split at K = 177, every case CaDiCaL LRAT + cake_lpr VERIFIED UNSAT:
+  TSPLIT-START z(8,35;4,4)>=177 cmin=5 rmin=0 cases=2 casesA=dadf1ae2f0482c69f71752eeb86fa09be8125d36ad86559aeaa841af4f7b3140 CASES-SAME 2026-11-19 17:00:32 +0400
+  TCASE 1/2 sp=0,33,2,0,0 ENC-SAME cnf=fff64f671be9300a UNSAT solve_s=69 cake_s=16 [s VERIFIED UNSAT] lrat=cbf9efb141f032fc
+  TCASE 2/2 sp=0,34,0,1,0 ENC-SAME cnf=d2bcbcd0e294450a UNSAT solve_s=3 cake_s=1 [s VERIFIED UNSAT] lrat=d9a0a32a0ed26f4b
+  TSPLIT-END z(8,35;4,4)>=177 cases=2 verified_unsat=2 timeouts=0 ALL-CASES-VERIFIED-UNSAT 2026-11-19 17:02:07 +0400
+  <archive>/zarankiewicz/tsplit_8_35_44_k177_c5/c1.lrat.gz bytes=131710650
+  <archive>/zarankiewicz/tsplit_8_35_44_k177_c5/c2.lrat.gz bytes=6991212
