@@ -220,10 +220,29 @@ Anthropic) working for Quantavane under Arhan Canli's direction. Programs descri
 code but were written with the same AI system. No mathematician outside Quantavane has reviewed this repository; the
 witnesses can be checked by anyone with the programs here or with their own.
 
-## Licence and citation
+## Licence
 
 The matrices, colourings, records and text are under CC BY 4.0 (`LICENSE`); the code is under the MIT licence
-(`LICENSE-CODE`). Please cite as: Arhan Canli, *The row z(8,n;4,4), twenty further Zarankiewicz numbers, and seven
-small Ramsey numbers*, https://github.com/arhancanli/quantavane-zarankiewicz-ramsey-cells (2026), together with the
-tables these values complete (Tan 2022; Collins, Riasanovsky, Wallace and Radziszowski 2016; Davies, Gill and Horsley
-2026; Radziszowski's DS1).
+(`LICENSE-CODE`).
+
+## How to cite
+
+Please cite as: Arhan Canli, *The row z(8,n;4,4), twenty further Zarankiewicz numbers, and seven small Ramsey
+numbers*, https://github.com/arhancanli/quantavane-zarankiewicz-ramsey-cells (2026), together with the tables these
+values complete (Tan 2022; Collins, Riasanovsky, Wallace and Radziszowski 2016; Davies, Gill and Horsley 2026;
+Radziszowski's DS1).
+
+```bibtex
+@misc{quantavane-zarankiewicz-ramsey-cells,
+  author       = {Canli, Arhan},
+  title        = {The row {$z(8,n;4,4)$}, twenty further {Zarankiewicz} numbers, and seven small {Ramsey} numbers},
+  year         = {2026},
+  howpublished = {\url{https://github.com/arhancanli/quantavane-zarankiewicz-ramsey-cells}},
+  note         = {Quantavane; CC BY 4.0; code MIT}
+}
+```
+
+[CITATION.cff](CITATION.cff) gives the same reference for GitHub's "Cite this repository" button.
+
+Known uses of this work are listed in [USED_BY.md](USED_BY.md). If you use it, please open an issue or a pull request
+with a link so that yours can be added.
